@@ -14,6 +14,12 @@ class MainClass {
       try{
         Console.WriteLine("MARCA DO CARRO >>");
         marca = Console.ReadLine();
+
+        if (marca == ""){
+          //Throw
+          throw new Exception ("Valor não Pode Estar Vazio");
+        }
+
         Console.WriteLine("KM/L DO CARRO >>");
         consumo = double.Parse(Console.ReadLine());
         
